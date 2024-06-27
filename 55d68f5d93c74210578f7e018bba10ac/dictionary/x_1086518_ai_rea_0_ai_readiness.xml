@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2de9cb51930b4210578f7e018bba1078" extends="task" label="AI_Readiness" max_length="40" name="x_1086518_ai_rea_0_ai_readiness" type="collection">
+        <element label="User" max_length="40" name="user" type="string"/>
+        <element choice="1" label="Company" mandatory="true" max_length="40" name="compan0" type="string">
+            <choice/>
+        </element>
+        <element choice="1" label="AI Strategy " max_length="40" name="ai_strateg0" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Published" sequence="1" value="Published"/>
+                <element inactive_on_update="false" label="Verbally Communicated" sequence="2" value="Verbally Communicated"/>
+                <element inactive_on_update="false" label="Undefined" sequence="3" value="Undefined"/>
+                <element inactive_on_update="false" label="Published &amp; Understood" sequence="0" value="Published &amp; Understood"/>
+            </choice>
+        </element>
+        <element default="+1" label="Phone" max_length="40" name="phone" type="phone_number_e164"/>
+        <element choice="1" label="AI Strategy" max_length="40" name="ai_strategy" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Defined" sequence="1" value="Defined"/>
+                <element inactive_on_update="false" label="Somewhat Defined" sequence="2" value="Somewhat Defined"/>
+                <element inactive_on_update="false" label="Undefined" sequence="3" value="Undefined"/>
+                <element inactive_on_update="false" label="Well Defined" sequence="0" value="Well Defined"/>
+            </choice>
+        </element>
+        <element label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>
